@@ -8,7 +8,7 @@ Hands-on writeups of vulnerabilities solved in [WebGoat](https://owasp.org/www-p
 |---|---------------|----------|---------|
 | 1 | Hijack a Session | A1 Broken Access Control | [Link](./a1-broken-access-control/hijack-a-session.md) |
 
-*(Table will grow as writeups are added — one row per lesson.)*
+*(Updated as new lessons are completed)*
 
 ## Categories
 
