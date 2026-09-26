@@ -9,7 +9,7 @@ Hands-on writeups of vulnerabilities solved in [WebGoat](https://owasp.org/www-p
 | 1 | Hijack a Session | A1 Broken Access Control | [Link](./a1-broken-access-control/hijack-a-session.md) |
 | 2 | Insecure Direct Object References (IDOR) | A1 Broken Access Control | [Link](./a1-broken-access-control/insecure-direct-object-references.md) |
 
-*(Keep on updating as new lessons are finished.)*
+*(Updated as new lessons are completed.)*
 
 ## Categories
 
