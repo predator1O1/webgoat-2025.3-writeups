@@ -23,7 +23,7 @@ The introductory exercises also demonstrate the three broad SQL command categori
 
 **Task:** Retrieve the department of the employee Bob Franco from the `employees` table.
 
-![SQL Injection lesson introduction](./assets/sql-injection/01-sql-intro.png)
+![SQL Injection lesson introduction](../assets/a3-injection/sql-injection(intro)/01-sql-intro.png)
 
 The lesson provides an `employees` table containing fields such as `userid`, `first_name`, `last_name`, `department`, `salary`, and `auth_tan`. The assignment asks for Bob Franco's department.
 
@@ -33,7 +33,7 @@ A `SELECT` statement can retrieve the required value by filtering on the employe
 SELECT department FROM employees WHERE last_name = 'Franco';
 ```
 
-![Basic SELECT query completed](./assets/sql-injection/02-task-1-select-correct.png)
+![Basic SELECT query completed](../assets/a3-injection/sql-injection(intro)/02-task-1-select-correct.png)
 
 The query returned **Marketing**, and WebGoat confirmed that the assignment was successfully completed.
 
@@ -49,7 +49,7 @@ The required modification can be performed with an `UPDATE` statement:
 UPDATE employees SET department = 'Sales' WHERE last_name = 'Barnett';
 ```
 
-![DML UPDATE query completed](./assets/sql-injection/03-task-3-dml-update.png)
+![DML UPDATE query completed](../assets/a3-injection/sql-injection(intro)/03-task-3-dml-update.png)
 
 The result shows Tobi Barnett's department changed from **Development** to **Sales**, and WebGoat confirmed successful completion.
 
@@ -65,7 +65,7 @@ The required schema modification is:
 ALTER TABLE employees ADD phone varchar(20);
 ```
 
-![DDL ALTER TABLE query completed](./assets/sql-injection/04-task-4-ddl-alter.png)
+![DDL ALTER TABLE query completed](../assets/a3-injection/sql-injection(intro)/04-task-4-ddl-alter.png)
 
 The `ALTER TABLE` statement successfully added the `phone` column to the `employees` table.
 
@@ -81,7 +81,7 @@ The required `GRANT` statement is:
 GRANT ALL PRIVILEGES ON grant_rights TO unauthorized_user
 ```
 
-![DCL GRANT query completed](./assets/sql-injection/05-task-5-dcl-grant.png)
+![DCL GRANT query completed](../assets/a3-injection/sql-injection(intro)/05-task-5-dcl-grant.png)
 
 WebGoat confirmed that the statement successfully completed the assignment. In a real application, allowing an unauthorized principal to receive unrestricted database privileges would represent a serious access-control failure.
 
@@ -109,7 +109,7 @@ This changes the logical condition so that the predicate evaluates to true for t
 SELECT * FROM user_data WHERE (first_name = 'John' AND last_name = '') OR ('1' = '1')
 ```
 
-![String SQL injection returning all user records](./assets/sql-injection/06-task-9-string-sqli.png)
+![String SQL injection returning all user records](../assets/a3-injection/sql-injection(intro)/06-task-9-string-sqli.png)
 
 The response contains multiple records from the `user_data` table rather than a single intended user. WebGoat also explains that the injected condition evaluates to `TRUE`, causing the query to return the available records.
 
@@ -144,7 +144,7 @@ SELECT * FROM user_data WHERE login_count = 1 AND userid = 101 OR 1=1
 
 The important point is that the numeric value is concatenated into the SQL statement without being safely parameterized. The injected `OR 1=1` introduces a condition that evaluates to true.
 
-![Numeric SQL injection returning all user records](./assets/sql-injection/07-task-10-numeric-sqli.png)
+![Numeric SQL injection returning all user records](../assets/a3-injection/sql-injection(intro)/07-task-10-numeric-sqli.png)
 
 The application returned the complete set of displayed user records, confirming that the numeric SQL injection was successful.
 
@@ -174,7 +174,7 @@ The resulting SQL is effectively:
 SELECT * FROM employees WHERE last_name = 'Smith' OR 1=1;--' AND auth_tan = '3SL99A'
 ```
 
-![String SQL injection compromising confidentiality](./assets/sql-injection/08-task-11-confidentiality.png)
+![String SQL injection compromising confidentiality](../assets/a3-injection/sql-injection(intro)/08-task-11-confidentiality.png)
 
 The application returned employee records from the table and explicitly confirmed that the confidentiality of the data had been compromised.
 
@@ -200,7 +200,7 @@ UPDATE employees SET SALARY = 1000000 WHERE last_name = 'Smith';
 --' AND auth_tan = '3SL99A'
 ```
 
-![SQL query chaining compromising integrity](./assets/sql-injection/09-task-12-query-chaining.png)
+![SQL query chaining compromising integrity](../assets/a3-injection/sql-injection(intro)/09-task-12-query-chaining.png)
 
 The additional `UPDATE` statement changed John Smith's salary to **1,000,000**. WebGoat confirmed both that the salary was changed and that the integrity of the database had been compromised.
 
@@ -231,7 +231,7 @@ The important parts of the payload are:
 - `DROP TABLE access_log` — deletes the `access_log` table.
 - `--` — comments out the remainder of the original SQL, preventing it from interfering with the injected statement.
 
-![DROP TABLE SQL injection compromising availability](./assets/sql-injection/10-task-13-availability.png)
+![DROP TABLE SQL injection compromising availability](../assets/a3-injection/sql-injection(intro)/10-task-13-availability.png)
 
 WebGoat confirmed that the `access_log` table was successfully deleted and explicitly identified this as a compromise of data availability.
 
