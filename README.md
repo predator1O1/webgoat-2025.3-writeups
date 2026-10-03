@@ -11,7 +11,8 @@ Hands-on writeups of vulnerabilities solved in [WebGoat](https://owasp.org/www-p
 | 3 | Missing Function Level Access Control | A1 Broken Access Control | [Link](./a1-broken-access-control/missing-function-level-access-control.md) |
 | 4 | Spoofing an Authentication Cookie | A1 Broken Access Control | [Link](./a1-broken-access-control/spoofing-an-authentication-cookie.md) |
 | 5 | Crypto Basics | A2 Cryptographic Failures | [Link](./a2-cryptographic-failures/crypto-basics.md) |
-| 6 | SQL Injection (intro) | A3 Injection | [Link](./a3-injection/sql-injection.md) |
+| 6 | SQL Injection (intro) | A3 Injection | [Link](./a3-injection/sql-injection-intro.md) |
+| 7 | SQL Injection (advanced) | A3 Injection | [Link](./a3-injection/sql-injection-advanced.md) |
 
 *(Updated as new lessons are completed.)*
 
