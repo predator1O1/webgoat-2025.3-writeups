@@ -13,6 +13,7 @@ Hands-on writeups of vulnerabilities solved in [WebGoat](https://owasp.org/www-p
 | 5 | Crypto Basics | A2 Cryptographic Failures | [Link](./a2-cryptographic-failures/crypto-basics.md) |
 | 6 | SQL Injection (intro) | A3 Injection | [Link](./a3-injection/sql-injection-intro.md) |
 | 7 | SQL Injection (advanced) | A3 Injection | [Link](./a3-injection/sql-injection-advanced.md) |
+| 8 | SQL Injection (mitigation) | A3 Injection | [Link](./a3-injection/sql-injection(mitigation).md) |
 
 *(Updated as new lessons are completed.)*
 
