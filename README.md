@@ -16,6 +16,7 @@ Hands-on writeups of vulnerabilities solved in [WebGoat](https://owasp.org/www-p
 | 8 | SQL Injection (mitigation) | A3 Injection | [Link](<./a3-injection/sql-injection(mitigation).md>) |
 | 9 | Cross-Site Scripting (reflected & DOM-based) | A3 Injection | [Link](./a3-injection/cross-site-scripting.md) |
 | 10 | Cross-Site Scripting (stored) | A3 Injection | [Link](./a3-injection/cross-site-scripting-stored.md) |
+| 11 | Cross-Site Scripting (mitigation) | A3 Injection | [Link](./a3-injection/cross-site-scripting-mitigation.md) |
 
 *(Updated as new lessons are completed.)*
 
