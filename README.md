@@ -17,6 +17,7 @@ Hands-on writeups of vulnerabilities solved in [WebGoat](https://owasp.org/www-p
 | 9 | Cross-Site Scripting (reflected & DOM-based) | A3 Injection | [Link](./a3-injection/cross-site-scripting.md) |
 | 10 | Cross-Site Scripting (stored) | A3 Injection | [Link](./a3-injection/cross-site-scripting-stored.md) |
 | 11 | Cross-Site Scripting (mitigation) | A3 Injection | [Link](./a3-injection/cross-site-scripting-mitigation.md) |
+| 12 | Path Traversal | A3 Injection | [Link](./a3-injection/path-traversal.md) |
 
 *(Updated as new lessons are completed.)*
 
