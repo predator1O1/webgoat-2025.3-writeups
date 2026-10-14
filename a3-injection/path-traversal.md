@@ -143,7 +143,7 @@ $ unzip -Z1 payload.zip
 Uploaded `payload.zip` through the normal profile-update form and clicked **Update**. The assignment completed — and the app's own confirmation message inadvertently proves the attack worked exactly as intended: the ZIP extracted successfully to the traversal-controlled path, which is *not* the directory the application's own "copy the extracted image into the profile" step expected, so that follow-up step failed with an error, while the attacker-controlled file was already written to the real target path outside the extraction sandbox:
 
 ![payload.zip uploaded — Zip Slip succeeds](../assets/a3-injection/path-traversal/16-zip-slip-upload-success.png)
-![final page uploaded - Zip Slip successful ] (../assests/a3-injection/path-traversal/17-zip-slip-success-page.png) 
+![final page uploaded - Zip Slip successful ] (../assets/a3-injection/path-traversal/17-zip-slip-success-page.png) 
 
 ## Why It Worked
 
