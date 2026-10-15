@@ -47,3 +47,7 @@ Everything in this repository was performed against a **local, self-hosted WebGo
 ## License
 
 This project is licensed under the [MIT License](./LICENSE) — see the LICENSE file for details. The writeups and explanations are the author's own original work; WebGoat itself is a separate OWASP project licensed under its own terms.
+
+Thanks & Regards.
+Predat0r
+
