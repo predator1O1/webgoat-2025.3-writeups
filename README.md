@@ -21,6 +21,8 @@ Hands-on writeups of vulnerabilities solved in [WebGoat](https://owasp.org/www-p
 | 13 | Cross-Site Request Forgery (CSRF) | A5 Security Misconfiguration | [Link](./a5-security-misconfiguration/cross-site-request-forgery.md) |
 | 14 | XML External Entity (XXE) Injection | A5 Security Misconfiguration | [Link](./a5-security-misconfiguration/xxe.md) |
 | 15 | Exploiting CVE-2013-7285 (XStream Insecure Deserialization) | A6 Vulnerable and Outdated Components | [Link](./a6-vulnerable-outdated-components/xstream-rce.md) |
+| 16 | Authentication Bypasses (2FA Password Reset) | A7 Identification and Authentication Failures | [Link](./a7-identification-authentication-failures/authentication-bypasses.md) |
+| 17 | Insecure Login (Credential Sniffing) | A7 Identification and Authentication Failures | [Link](./a7-identification-authentication-failures/insecure-login.md) |
 
 *(Updated as new lessons are completed.)*
 
