@@ -11,7 +11,7 @@ Hands-on writeups of vulnerabilities solved in [WebGoat](https://owasp.org/www-p
 | 3 | Missing Function Level Access Control | A1 Broken Access Control | [Link](./a1-broken-access-control/missing-function-level-access-control.md) |
 | 4 | Spoofing an Authentication Cookie | A1 Broken Access Control | [Link](./a1-broken-access-control/spoofing-an-authentication-cookie.md) |
 | 5 | Crypto Basics | A2 Cryptographic Failures | [Link](./a2-cryptographic-failures/crypto-basics.md) |
-| 6 | SQL Injection (intro) | A3 Injection | [Link](./a3-injection/sql-injection-intro.md) |
+| 6 | SQL Injection (intro) | A3 Injection | [Link](./a3-injection/sql-injection.md) |
 | 7 | SQL Injection (advanced) | A3 Injection | [Link](./a3-injection/sql-injection-advanced.md) |
 | 8 | SQL Injection (mitigation) | A3 Injection | [Link](<./a3-injection/sql-injection(mitigation).md>) |
 | 9 | Cross-Site Scripting (reflected & DOM-based) | A3 Injection | [Link](./a3-injection/cross-site-scripting.md) |
@@ -23,6 +23,7 @@ Hands-on writeups of vulnerabilities solved in [WebGoat](https://owasp.org/www-p
 | 15 | Exploiting CVE-2013-7285 (XStream Insecure Deserialization) | A6 Vulnerable and Outdated Components | [Link](./a6-vulnerable-outdated-components/xstream-rce.md) |
 | 16 | Authentication Bypasses (2FA Password Reset) | A7 Identification and Authentication Failures | [Link](./a7-identification-authentication-failures/authentication-bypasses.md) |
 | 17 | Insecure Login (Credential Sniffing) | A7 Identification and Authentication Failures | [Link](./a7-identification-authentication-failures/insecure-login.md) |
+| 18 | JWT Tokens (Decoding, alg:none Bypass, Secret Cracking, Token Refresh Abuse) | A7 Identification and Authentication Failures | [Link](./a7-identification-authentication-failures/jwt-tokens.md) |
 
 *(Updated as new lessons are completed.)*
 
